@@ -1,0 +1,14 @@
+.no-file {
+  transform: scale(3);
+  color: #6b6b6b;
+}
+
+:host {
+  display: block;
+}
+
+.full-width {
+  border: 1px dashed #cbcbcb;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.8);
+}

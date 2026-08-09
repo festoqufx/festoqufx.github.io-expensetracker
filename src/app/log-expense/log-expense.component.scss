@@ -1,0 +1,17 @@
+#enter-expense {
+  .mat-mdc-card-content {
+    padding-top: 12px;
+  }
+
+  .row {
+    padding-bottom: 14px;
+    &:first-child {
+      padding-top: 10px;
+    }
+  }
+
+  .mat-mdc-card-actions {
+    border-top: 1px solid #ececec;
+    padding-top: 16px;
+  }
+}

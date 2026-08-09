@@ -1,0 +1,15 @@
+@if (data) {
+  <mat-card appearance="outlined" class="h-100">
+    <mat-card-content>
+      <div class="metric-summary mt-3">
+        <div class="d-flex justify-content-center">
+          @if (data.icon) {
+            <mat-icon class="icon-size" [ngClass]="data.color">{{ data.icon }}</mat-icon>
+          }
+        </div>
+        <div class="data-value d-flex justify-content-center">{{ data.value }}</div>
+        <div class="d-flex justify-content-center text-muted">{{ data.metricTitle }}</div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+}

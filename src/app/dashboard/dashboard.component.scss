@@ -1,0 +1,84 @@
+#view-expense {
+  animation: fade-in 220ms ease-in;
+
+  chart {
+    width: 100% !important;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  button.fab {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 100;
+  }
+
+  .quick-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .action-button {
+    min-height: 44px;
+  }
+
+  .month-date-picker {
+    font-size: 14px;
+    width: 40%;
+  }
+
+  .no-data {
+    height: 50vh;
+    .mat-icon {
+      width: auto;
+    }
+
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .empty-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.icon-alert {
+  transform: scale(3);
+}
+
+@media (max-width: 959.98px) {
+  #view-expense {
+    .fab {
+      bottom: 16px;
+      right: 16px;
+    }
+
+    .quick-actions {
+      justify-content: center;
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
